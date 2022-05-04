@@ -11,6 +11,10 @@
   height: 100vh;
   width: 100vw;
   background-color: orange;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
 }
 
 .title-container {
@@ -20,7 +24,6 @@
   flex-wrap: wrap;
   padding: 1rem;
   border: 1px solid black;
-
 }
 
 .title-container a { 
@@ -30,40 +33,24 @@
 
 .game-container {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
   padding: 1rem;
-  height: 100%;
+  height: 75%;
   width: 100%;
-  /* border: 1px solid black; */
-  gap: 1rem;
-}
-
-.btns-container {
-  width: 100%;
-  display: flex;
-  justify-content: space-evenly;
   border: 1px solid black;
+  gap: 5rem;
 }
 
-.btns-container button {
-  font-size: 1.5rem;
-  padding: 0.8rem;
-  background-color: coral;
-  border-radius: 10px;
-}
-
-.btns-container button:hover {
-  transform: scale(1.2);
-}
-
+/* score section */
 .score-container{ 
-  border: 1px solid black;
+  /* border: 1px solid black; */
   width: 100%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .player-score{
@@ -80,4 +67,39 @@
   align-items: center;
   font-size: 1.5rem;
   gap: 1rem;
+}
+
+/* result section */
+.result-container {
+  /* border: 1px solid black; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* buttons section */
+.btns-container {
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  /* border: 1px solid black; */
+  flex-wrap: wrap;
+}
+
+.btns-container button {
+  font-size: 1.5rem;
+  padding: 0.8rem;
+  background-color: coral;
+  border-radius: 10px;
+}
+
+.btns-container button:hover {
+  transform: scale(1.1);
+}
+
+img {
+  border-radius: 25px;
+  width: 200px;
+  height: 250px;
 }
