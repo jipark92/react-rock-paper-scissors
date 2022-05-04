@@ -1,4 +1,4 @@
-export default function game() {
+export default function Game() {
     return (
         <div>game</div>
     )

@@ -12,7 +12,15 @@
 
 .title-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
   padding: 1rem;
   border: 1px solid black;
+
+}
+
+.title-container a { 
+  text-decoration: none;
+  color: black;
 }
