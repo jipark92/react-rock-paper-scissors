@@ -39,6 +39,7 @@ export default function Game() {
     //player paper button function
     const chosePaper = () => {
         setPlayerChoice(paperImg)
+        setShowImg(true)
         let computerSelection = computerChose()
         if(hands[1] && computerSelection === hands[1]){
             setResult("Draw")
@@ -53,6 +54,7 @@ export default function Game() {
     //player scissorsk button function
     const choseScissors = () => {
         setPlayerChoice(scissorsImg)
+        setShowImg(true)
         let computerSelection = computerChose()
         if(hands[2] && computerSelection === hands[2]){
             setResult("Draw")
