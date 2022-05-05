@@ -97,6 +97,7 @@ export default function Game() {
                         {showImg && <img src={playerChoice} alt="player-choice-img"/>}
                     </div>
                 </div>
+                <img className="vs-img" src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fcdn.onlinewebfonts.com%2Fsvg%2Fimg_410939.png&f=1&nofb=1" alt="vs-sign"/>
                 <div className='computer-score'>
                     <h2>Computer</h2>
                     <h2>{computerScore}</h2>
@@ -127,11 +128,11 @@ export default function Game() {
                     keyboard={false}
                 >
                 <Modal.Header closeButton>
-                <Modal.Title>Restart Confirmation</Modal.Title>
+                    <Modal.Title><h2>Restart Confirmation</h2></Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-                    <p>Do You Really Want To Reset?</p>
-                    <p>All Scores will reset to 0</p>
+                    <h4>Do You Really Want To Reset?</h4>
+                    <h4>All Scores will reset to 0</h4>
                 </Modal.Body>
                 <Modal.Footer>
                     <Button variant="danger" onClick={handleClose}>
