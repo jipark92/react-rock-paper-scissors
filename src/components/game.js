@@ -143,10 +143,6 @@ export default function Game() {
                 </Modal>
             </div>
 
-            {/* <div className='rules-container'>
-                <h1><u>Rules</u></h1>
-                <h2>First to 10 Win</h2>
-            </div> */}
         </div>
     )
 }
