@@ -89,6 +89,13 @@ export default function Game() {
         }
     }
 
+    const resetScore = () => {
+        setShowImg(false)
+        setComputerScore(0)
+        setPlayerScore(0)
+        handleClose()
+    }
+
     return (
         <div className="game-container">
             <div className='score-container'>
@@ -121,7 +128,7 @@ export default function Game() {
 
             <div className='reset-container'>
                 {/* <button className='reset-btn'>RESET SCORE</button> */}
-                <Button variant="danger" onClick={handleShow}>Reset Score</Button>
+                <Button className="reset-btn" variant="danger" onClick={handleShow}>Reset Score</Button>
 
                 <Modal
                     show={show}
@@ -140,7 +147,7 @@ export default function Game() {
                     <Button variant="danger" onClick={handleClose}>
                         Close
                     </Button>
-                    <Button variant="warning" onClick={()=>{window.location.reload()}}>Understood</Button>
+                    <Button variant="warning" onClick={resetScore}>Understood</Button>
                 </Modal.Footer>
                 </Modal>
             </div>
